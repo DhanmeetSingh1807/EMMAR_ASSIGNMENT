@@ -1,4 +1,4 @@
-package com.example.emmar_assignment.ui.entity;
+package com.example.emmar_assignment.ui.database.entity;
 
 import static com.example.emmar_assignment.ui.utils.Utils.getDate;
 
@@ -15,7 +15,10 @@ import com.bumptech.glide.request.RequestOptions;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
+/**
+ * Created by Dhanmeet on 11/08/23.
+ */
+// Table for storing user Info
 @Entity(tableName = "User", indices = @Index(value = {"id"}, unique = true))
 public class User {
     @PrimaryKey(autoGenerate = true)

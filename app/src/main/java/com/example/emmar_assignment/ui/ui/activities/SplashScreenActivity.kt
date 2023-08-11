@@ -6,8 +6,12 @@ import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 import com.example.emmar_assignment.R
 
-
+/**
+ * Created by Dhanmeet on 11/08/23.
+ */
 class SplashScreenActivity : AppCompatActivity() {
+
+    // 3 seconds timeout for splash screen
     private val timeOut: Long = 3000
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

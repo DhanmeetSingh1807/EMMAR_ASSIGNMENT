@@ -1,12 +1,12 @@
-package com.example.emmar_assignment.ui.pojo;
+package com.example.emmar_assignment.ui.models;
 
-import com.example.emmar_assignment.ui.pojo.Result;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
-import java.util.List;
-
+/**
+ * Created by Dhanmeet on 11/08/23.
+ */
 public class UserList {
     @SerializedName("results")
     @Expose

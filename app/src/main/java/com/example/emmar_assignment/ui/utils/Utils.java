@@ -2,8 +2,11 @@ package com.example.emmar_assignment.ui.utils;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
+/**
+ * Created by Dhanmeet on 11/08/23.
+ */
 public class Utils {
+    // getting date in a particular format for displaying on UI.
     public static String getDate(String _date) {
         String timestamp = _date;
         SimpleDateFormat inputFormat = new SimpleDateFormat("E MMM dd HH:mm:ss 'GMT'Z yyyy");

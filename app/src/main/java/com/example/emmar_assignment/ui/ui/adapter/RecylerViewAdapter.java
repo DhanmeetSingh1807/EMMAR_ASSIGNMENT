@@ -1,7 +1,6 @@
 package com.example.emmar_assignment.ui.ui.adapter;
 
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -10,10 +9,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.emmar_assignment.R;
 import com.example.emmar_assignment.databinding.SingleListItemBinding;
-import com.example.emmar_assignment.ui.entity.User;
+import com.example.emmar_assignment.ui.database.entity.User;
 
 import java.util.ArrayList;
-
+/**
+ * Created by Dhanmeet on 11/08/23.
+ */
 public class RecylerViewAdapter extends RecyclerView.Adapter<RecylerViewAdapter.DeveloperViewHolder> {
 
     private ArrayList<User> userList;
@@ -59,6 +60,7 @@ public class RecylerViewAdapter extends RecyclerView.Adapter<RecylerViewAdapter.
         }
 
         public void bind(User user) {
+            // click event for selected user details & passed to UI
             mDeveloperListItemBinding.layout.setOnClickListener(view -> listener.onItemClick(user));
         }
     }
